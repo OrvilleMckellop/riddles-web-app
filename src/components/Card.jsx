@@ -5,9 +5,9 @@ import { IoReloadCircle } from "react-icons/io5";
 const Card = () => {
   const [riddles, setRiddles] = useState([]);
   const [buttonClicked, setButtonClicked] = useState(false);
-  const Url = process.env.Url;
-  const key = process.env.key;
-
+  const Url = import.meta.env.VITE_URL;
+  const key = import.meta.env.VITE_KEY;
+  // console.log(process.env.APPLE)
 
     useEffect(() => {
         axios.get(Url, {

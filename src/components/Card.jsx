@@ -5,8 +5,8 @@ import { IoReloadCircle } from "react-icons/io5";
 const Card = () => {
   const [riddles, setRiddles] = useState([]);
   const [buttonClicked, setButtonClicked] = useState(false);
-  const Url = 'https://api.api-ninjas.com/v1/riddles';
-  const key = 'UUNg9fx6Q63PB+5bwM0xvQ==hhVQXwGTn9GKN3T5';
+  const Url = process.env.Url;
+  const key = process.env.key;
 
 
     useEffect(() => {
